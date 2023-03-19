@@ -1,0 +1,7 @@
+{
+  "welcome": "Welcome to the mortgage calculator!",
+  "loanAmount": "What is the loan amount?",
+  "intRate": "What's the interest rate (answer in whole numbers, i.e: 6% = 6",
+  "loanDuration": "How many years do you want the mortgage for?",
+  "invalidNumber": "Hmm.... that doesn't look like a valid number. "
+}
