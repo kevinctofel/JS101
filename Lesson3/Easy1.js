@@ -28,8 +28,20 @@
 
 // QUESTION 4:
 // Using the following string, create a new string that contains all lowercase letters except for the first character, which should be capitalized.
-let munstersDescription = "the Munsters are CREEPY and Spooky.";
+// let munstersDescription = "the Munsters are CREEPY and Spooky.";
 // => The munsters are creepy and spooky.
-correctCase = munstersDescription.split('').map((element) => element.toLowerCase());
-console.log(correctCase.join(""));
+// Answer:
+// console.log(munstersDescription.slice(0 , 1).toUpperCase() + munstersDescription.slice(1).toLowerCase());
+
+// QUESTION 5:
+// What will the following code output?
+// console.log(false == '0');
+// console.log(false === '0');
+// Answer: true, false
+
+// QUESTION 6:
+// Add entries for Marilyn and Spot to the object:
+let ages = { Herman: 32, Lily: 30, Grandpa: 5843, Eddie: 10 };
+let additionalAges = { Marilyn: 22, Spot: 237 };
+
 
