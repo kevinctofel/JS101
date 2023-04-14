@@ -41,7 +41,40 @@
 
 // QUESTION 6:
 // Add entries for Marilyn and Spot to the object:
-let ages = { Herman: 32, Lily: 30, Grandpa: 5843, Eddie: 10 };
-let additionalAges = { Marilyn: 22, Spot: 237 };
+// let ages = { Herman: 32, Lily: 30, Grandpa: 5843, Eddie: 10 };
+// let additionalAges = { Marilyn: 22, Spot: 237 };
 
+// Answer:
+// Object.assign(ages, additionalAges);
+// console.log(ages);
 
+// QUESTION 7:
+// Determine whether the name Dino appears in the strings below
+
+// let str1 = "Few things in life are as important as house training your pet dinosaur.";
+// let str2 = "Fred and Wilma have a pet dinosaur named Dino.";
+
+// Answer:
+// console.log(str1.includes('Dino'));
+// console.log(str2.includes('Dino'));
+
+// QUESTION 8:
+// How can we add the family pet, "Dino", to the following array?
+
+// let flintstones = ["Fred", "Barney", "Wilma", "Betty", "Bambam", "Pebbles"];
+
+// flintstones.push('Dino');
+
+// QUESTION 9: How can we add multiple items to our array? ('Dino' and 'Hoppy')
+
+// Answer:
+// flintstones.push('Dino', 'Hoppy');
+
+// QUESTION 10: 
+// Return a new version of this sentence that ends just before the word house. 
+
+// let advice = "Few things in life are as important as house training your pet dinosaur.";
+
+// Expected return value:
+// => 'Few things in life are as important as '
+// Answer: advice.slice(0, advice.indexOf('house')));
