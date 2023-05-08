@@ -18,7 +18,7 @@ function createStudent(name, year) {
       console.log(`${this.name} is a ${this.year} student`)
     },
     addCourse(course) {
-      this.courses.push(course, course.note="");
+      this.courses.push(course);
 
     },
     listCourses() {
@@ -29,25 +29,18 @@ function createStudent(name, year) {
       let course = this.courses.find(course => {
         return course.code === code;
       });
-      // //this.courses[courseIndex]['notes'] = note;
-      // if (course) {
-      //   if (Object.hasOwn(course, 'note')) {
-      //     console.log(course);
+      if (course.note == undefined) {
+        course.note = note;}
+      else {
         course.note = course.note + "; " + note;
-        // }
-        // course.note ? course.note + "; " + note : course.note = note;
-      
-      // else {
-      //   course.note = note;
-      // }
-    // }
+      }
     }
     ,
     viewNotes() {
       
       this.courses.forEach(course => {
         if (Object.hasOwn(course, 'note')) {
-        console.log(course.name + ": " + course.note)
+        console.log(course.name + " : " + course.note);
         }
       });
     }
@@ -60,7 +53,7 @@ foo.info();
 foo.listCourses();
 // [];
 foo.addCourse({ name: 'Math', code: 101 });
- foo.addCourse({ name: 'Advanced Math', code: 102 });
+foo.addCourse({ name: 'Advanced Math', code: 102 });
 foo.listCourses();
 foo.viewNotes();
 // [{ name: 'Math', code: 101 }, { name: 'Advanced Math', code: 102 }]
